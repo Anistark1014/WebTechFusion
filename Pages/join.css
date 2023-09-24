@@ -1,0 +1,136 @@
+/* Import the fonts used in your main theme */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Audiowide&family=Genos:wght@700&family=Quantico&family=Questrial&family=Quicksand:wght@700&family=Sarpanch:wght@400;500&display=swap');
+
+/* Reset and Global Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sarpanch', sans-serif;
+    color: black;
+}
+
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+a:hover {
+    color: #00ddff;
+    transition: ease all 500ms;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #c5f7f3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles (include styles for header if applicable) */
+nav {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    align-items: center;
+    font-family: 'audiowide';
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5vmin;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 2vh;
+}
+
+/* Join Us Section Styles */
+#join-us {
+    margin: 0rem 10rem; /* Adjust the margin for smaller screens */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#join-us p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    width: 60vw;
+}
+
+.google-form {
+    margin-top: 2rem;
+    width: 60vw;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.482);
+    border-radius: 20px;
+    overflow: hidden;
+    /* Add any additional styles for your Google Form container here */
+}
+
+/* Footer Styles */
+footer {
+    background-color: transparent;
+    height: 5vh;
+    padding: 0 0;
+    text-align: center;
+}
+
+footer .footerlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footerlinks a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/* Media Queries (Responsive Styles) */
+@media (max-width: 800px) {
+  
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 2vh;
+    width: 100vw;
+}
+
+
+
+#join-us p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    width: 85vw;
+}
+
+.google-form {
+    margin-top: 2rem;
+    width: 90vw;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.482);
+
+    /* Add any additional styles for your Google Form container here */
+}
+
+iframe{
+    width: 100%;
+}
+
+}
+

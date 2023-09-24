@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Audiowide&family=Genos:wght@700&family=Quantico&family=Questrial&family=Quicksand:wght@700&family=Sarpanch:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ebf3ff;
+    scroll-behavior: smooth;
+    transition: ease all 500ms;
+}
+
+a{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: #00ddff;
+} 
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+
+nav{
+    /* width: 100%; */
+    height: 8vh;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navleft{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.logo{
+    font-family: 'Genos', sans-serif;
+}
+/* 
+.navright{
+    display: flex;
+    flex-wrap: wrap;
+    
+} */
+
+.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 40vw;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.Hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+
+}
+
+.herotext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 5vw;
+    
+    
+}
+
+
+
+.herotext h2{
+    font-size: 5vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5vw;
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    line-height: 125%;
+    
+}
+
+.herotext h4{
+    font-size: 2.5vh;
+    font-weight: 100;
+    width: 60%;
+    margin-left: 5vw;
+    padding-top: 2vh;
+    margin-bottom: 5vh;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.CTA{
+    margin-left: 5vw;
+    padding: 5px;
+
+    width: 6rem;
+    font-size: 1.2rem;
+
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+    border-radius: 20px;
+    background-color: #9bd5fa ;
+    
+    
+}
+
+.CTA:hover{
+    transform: scale(1.2);
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    color: black;
+    
+}
+
+
+.heroimg{
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg img{
+    width: 85%;
+    
+}
+
+.Welcome{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60vh;
+}
+
+.Welcome h3{
+    font-family: 'Audiowide', cursive;;
+    font-size: 5vh;
+    font-weight: 200;
+
+}
+
+.Welcome h4{
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: 500;  
+    font-size: 3.5vh;
+
+}
+
+.Welcome .intro{
+    width: 50vw;
+    font-size: 2.5vmin;
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+
+.Gallery{
+
+    margin-top: 10vh     ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery h3{
+    font-size: 5vh;
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+    margin-bottom: 5vh;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
+    
+
+    height: 40vh;
+    width: 80vw;
+
+    padding: 2rem 0vw;
+}
+
+.cardimg{
+    height: 100%;
+    width: 24vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    margin-right: 2vw;
+
+    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+
+.cardimg:hover{
+    transform: scale(1.3);
+    transition: ease all 1.2s;
+}
+
+.cardimg img{
+    height: 100%;
+    width: 100%;
+}
+
+.discription{
+    width: 40vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.discription h2{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.text{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.creator{
+    align-self: flex-end;
+    font-size: 0.7rem;
+}
+
+.visitweb{
+    
+    padding: 5px;
+    margin-top: 5vh;
+
+    width: 9rem;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFCEC7 ;
+    font-weight: 800;
+
+    align-self: flex-start;
+}
+
+.visitweb:hover{
+    transform: scale(1.2);
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+footer *{
+    background-color: transparent;
+    color: white;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151520;
+    height: 35vh;
+
+}
+
+.social p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+    padding-top: 5vh;
+ 
+}
+
+.social span{
+    font-family: 'Roboto', sans-serif;
+}
+
+.socialmedialinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30vw;
+    
+    padding-bottom: 5vh;
+    
+}
+
+.medialink{
+    border-radius: 50%;
+    border: 1px solid  white;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+
+    background-color: transparent;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+i{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50%;
+    
+}
+
+.medialink:hover, i:hover{
+    
+    background-color: white;
+    border-color: #151520;
+    color: #151520;
+}
+
+.zerosection{
+    background-color: #151515;
+    padding: 0rem 5vw;
+    height: 20vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zerosection *{
+    font-family: Quantico ;
+    font-weight:lighter;
+    font-size: 0.9rem;
+}
+
+.zerosection>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.zerosection span{
+    
+    font-size: 1.2rem;
+}
+
+
+@media (max-width:800px) {
+
+    /* Import the fonts used in your main theme */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Audiowide&family=Genos:wght@700&family=Quantico&family=Questrial&family=Quicksand:wght@700&family=Sarpanch:wght@400;500&display=swap');
+
+*{
+    text-align: center;
+}
+
+a{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: #00ddff;
+} 
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+
+nav{
+    /* width: 100%; */
+    height: 8vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navleft{
+    display: none;
+    width: 0px;
+}
+
+
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    width: 90vw;
+    
+}
+
+
+.Hero{
+    display: flex;
+    flex-direction: column; /* Change to column for smaller screens */
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+
+
+}
+
+.herotext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90vw; /* Adjust for smaller screens */
+    margin: 0;
+    margin-top: 2vh; /* Add margin for spacing */
+    
+}
+
+
+
+.herotext h2{
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0; /* Reset margin */
+    font-family: 'Quicksand', sans-serif;
+    width: 100%; /* Adjust width for smaller screens */
+    text-align: center; /* Center text */
+    
+}
+
+.herotext h4{
+    font-size: 1.3rem; /* Adjust font size for smaller screens */
+    font-weight: 100;
+    width: 100%; /* Adjust width for smaller screens */
+    margin-left: 0; /* Reset margin */
+    padding-top: 2vh;
+    margin-bottom: 5vh;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.CTA{
+    align-self: center;
+    margin-top: 2vh; /* Add margin for spacing */
+    padding: 5px;
+
+    width: 9rem;
+
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+    border-radius: 20px;
+    background-color: #9bd5fa ;
+    
+    
+}
+
+.CTA:hover{
+    transform: scale(1.2);
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    color: black;
+    
+}
+
+.heroimg{
+    width: 90vw; /* Adjust for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimg img{
+    width: 85%;
+    
+}
+
+.Welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 55vh;
+}
+
+.Welcome h3{
+    font-family: 'Audiowide', cursive;
+    font-size: 3.5vh; /* Adjust font size for smaller screens */
+    font-weight: 200;
+
+}
+
+.Welcome h4{
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: 500;  
+    font-size: 2.5vh; /* Adjust font size for smaller screens */
+}
+
+.Welcome .intro{
+    width: 85vw; /* Adjust width for smaller screens */
+    font-size: 3.4vmin; /* Adjust font size for smaller screens */
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+
+.Gallery{
+
+    margin-top: 5vh; /* Add margin for spacing */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Gallery h3{
+    font-size: 3vh; /* Adjust font size for smaller screens */
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+    margin-bottom: 2vh;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    height: auto; /* Adjust height for smaller screens */
+    width: 90vw; /* Adjust width for smaller screens */
+    
+    padding: 0rem 0vw;
+}
+
+.cardimg{
+    height: 100%;
+    width: 90vw; /* Adjust width for smaller screens */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    margin-right: 0; /* Reset margin */
+
+    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+
+
+.discription{
+    width: 90vw; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.discription h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center;
+}
+
+.text{
+    font-size: 3.3vmin;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.creator{
+    align-self: flex-end;
+    font-size: 0.8rem;
+}
+
+.visitweb{
+    margin: 2vh 0; /* Add margin for spacing */
+    padding: 5px;
+
+    width: 9rem;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFCEC7 ;
+    font-weight: 800;
+
+    align-self: flex-start;
+}
+
+.visitweb:hover{
+    transform: scale(1.2);
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+footer *{
+    background-color: transparent;
+    color: white;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151520;
+    height: 35vh;
+
+}
+
+.social p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 2.4rem;
+    padding-top: 5vh;
+    
+}
+
+.social span{
+    font-size: 1.2rem;
+    width: 80vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.socialmedialinks{
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    
+    padding-bottom: 5vh;
+    
+}
+
+.medialink{
+    border-radius: 50%;
+    border: 1px solid  white;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+
+    background-color: transparent;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+i{
+    height: 150%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50%;
+    
+}
+
+.medialink:hover, i:hover{
+    
+    background-color: white;
+    border-color: #151520;
+    color: #151520;
+}
+.zerosection{
+    background-color: #151515;
+    padding: 0rem 5vw;
+    height: 15vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zerosection *{
+    font-family: Quantico ;
+    font-weight:lighter;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.zerosection>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.zerosection span{
+    
+    font-size: 1.2rem;
+}
+
+
+}
+
